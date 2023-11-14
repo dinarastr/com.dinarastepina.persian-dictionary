@@ -7,4 +7,4 @@ FROM openjdk:11
 EXPOSE 8080:8080
 RUN mkdir "app"
 COPY --from=build /home/gradle/src/build/libs/*.jar /app/persian-dictionary-0.0.1.jar
-ENTRYPOINT ["java", "-jar", "app/persian-dictionary.jar"]
+ENTRYPOINT ["java", "-jar", "app/persian-dictionary-0.0.1.jar"]
