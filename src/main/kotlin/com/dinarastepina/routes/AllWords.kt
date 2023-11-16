@@ -8,10 +8,12 @@ import io.ktor.server.routing.*
 
 fun Route.getAllWords(service: DictionaryService) {
     get("/dictionary") {
-            call.respond(
+        val lastFetchedWord = call.request.queryParameters["lastFetchedWord"].orEmpty()
+
+        call.respond(
                 message = ApiResponse(
                     success = true,
-                    words = service.findAll()
+                    words = service.findAll(lastFetchedWord)
                 )
             )
     }
