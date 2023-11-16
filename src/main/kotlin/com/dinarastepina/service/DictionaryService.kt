@@ -5,8 +5,8 @@ import com.dinarastepina.repository.DictionaryRepository
 
 class DictionaryService (private val repository: DictionaryRepository) {
 
-    suspend fun findAll(lastFetchedWord: String
-    ): List<Word> = repository.findAllConferences(lastFetchedWord)
+    suspend fun findAll(lastFetchedId: String
+    ): List<Word> = repository.findAllConferences(lastFetchedId)
 
     suspend fun findOne(id: String): Word? = repository.findOneConference(id)
 }

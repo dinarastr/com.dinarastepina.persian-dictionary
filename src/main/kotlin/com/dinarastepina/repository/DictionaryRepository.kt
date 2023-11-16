@@ -2,9 +2,8 @@ package com.dinarastepina.repository
 
 import com.dinarastepina.models.Word
 import com.dinarastepina.util.Constants
-import com.mongodb.client.model.BsonField
-import com.mongodb.client.model.Filters
-import org.bson.codecs.pojo.annotations.BsonId
+import org.bson.Document
+import org.bson.conversions.Bson
 import org.bson.types.ObjectId
 import org.litote.kmongo.coroutine.CoroutineClient
 
@@ -12,11 +11,10 @@ class DictionaryRepository(private val coroutineClient: CoroutineClient) {
 
 
     suspend fun findAllConferences(
-        lastFetchedWord: String
+        lastFetchedId: String
     ): List<Word> {
-        val filter = Filters.gt(
-            "EnglishWord", lastFetchedWord
-        )
+        val filter: Bson = Document("_id", Document("\$gt", ObjectId(lastFetchedId)))
+
         return collection()
             .find(
                 filter
