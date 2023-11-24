@@ -11,11 +11,12 @@ fun Route.searchWords(service: DictionaryService) {
     get("/dictionary/search") {
         val query = call.request.queryParameters["query"].orEmpty()
         val lastFetchedId = call.request.queryParameters["lastFetchedId"].orEmpty()
+        val pageSize = call.request.queryParameters["limit"] ?: "20"
 
         call.respond(
             message = ApiResponse(
                 success = true,
-                words = service.searchWords(query, lastFetchedId)
+                words = service.searchWords(query, lastFetchedId, pageSize.toInt())
             ),
             status = HttpStatusCode.OK
         )

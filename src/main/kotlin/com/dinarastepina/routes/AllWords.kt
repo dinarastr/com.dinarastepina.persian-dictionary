@@ -10,11 +10,12 @@ import io.ktor.server.routing.*
 fun Route.getAllWords(service: DictionaryService) {
     get("/dictionary") {
         val lastFetchedId = call.request.queryParameters["lastFetchedId"].orEmpty()
+        val pageSize = call.request.queryParameters["limit"] ?: "20"
 
         call.respond(
                 message = ApiResponse(
                     success = true,
-                    words = service.findAll(lastFetchedId)
+                    words = service.findAll(lastFetchedId, pageSize.toInt())
                 ),
             status = HttpStatusCode.OK
             )

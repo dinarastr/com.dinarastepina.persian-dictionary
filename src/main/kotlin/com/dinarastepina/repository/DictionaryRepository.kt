@@ -12,7 +12,8 @@ class DictionaryRepository(private val coroutineClient: CoroutineClient) {
 
 
     suspend fun findAllConferences(
-        lastFetchedId: String
+        lastFetchedId: String,
+        pageSize: Int
     ): List<Word> {
         val filter: Bson = if (lastFetchedId.isNotEmpty()) Document("_id", Document("\$gt", ObjectId(lastFetchedId))) else EMPTY_BSON
 
@@ -20,13 +21,14 @@ class DictionaryRepository(private val coroutineClient: CoroutineClient) {
             .find(
                 filter
             )
-            .limit(20)
+            .limit(pageSize)
             .toList()
     }
 
     suspend fun searchWords(
         query: String,
-        lastFetchedId: String
+        lastFetchedId: String,
+        pageSize: Int
     ): List<Word> {
         val filter: Bson = if (lastFetchedId.isNotEmpty()) Document("EnglishWord", Document("\$regex", query)).append(
             "_id", Document("\$gt", ObjectId(lastFetchedId))
@@ -36,7 +38,7 @@ class DictionaryRepository(private val coroutineClient: CoroutineClient) {
             .find(
                 filter
             )
-            .limit(20)
+            .limit(pageSize)
             .toList()
     }
 
