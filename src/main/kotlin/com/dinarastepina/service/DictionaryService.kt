@@ -8,5 +8,8 @@ class DictionaryService (private val repository: DictionaryRepository) {
     suspend fun findAll(lastFetchedId: String
     ): List<Word> = repository.findAllConferences(lastFetchedId)
 
+    suspend fun searchWords(query: String, lastFetchedId: String):
+            List<Word> = repository.searchWords(query, lastFetchedId)
+
     suspend fun findOne(id: String): Word? = repository.findOneConference(id)
 }

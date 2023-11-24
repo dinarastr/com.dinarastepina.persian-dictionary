@@ -1,7 +1,9 @@
 package com.dinarastepina.plugins
 
 import com.dinarastepina.routes.getAllWords
+import com.dinarastepina.routes.getWordDetails
 import com.dinarastepina.routes.root
+import com.dinarastepina.routes.searchWords
 import com.dinarastepina.service.DictionaryService
 import io.ktor.server.application.*
 import io.ktor.server.response.*
@@ -12,5 +14,7 @@ fun Application.configureRouting(
 ) {
     routing {
         getAllWords(service)
+        searchWords(service)
+        getWordDetails(service)
     }
 }
