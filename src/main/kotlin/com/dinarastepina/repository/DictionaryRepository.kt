@@ -40,7 +40,10 @@ class DictionaryRepository(private val coroutineClient: CoroutineClient) {
             .toList()
     }
 
-    suspend fun findOneConference(id: String): Word? = collection().findOneById(id)
+    suspend fun findOneConference(id: String): Word? {
+        val filter = Document("_id", Document("\$eq", ObjectId(id)))
+        return collection().findOne(filter)
+    }
 
 
     private fun collection() =
