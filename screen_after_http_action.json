@@ -1,0 +1,802 @@
+{
+  "responseType": "replace",
+  "view": {
+    "type": "ScrollWrapper",
+    "content": {
+      "axis": "vertical",
+      "content": {
+        "type": "StackView",
+        "content": {
+          "axis": "vertical",
+          "alignment": "fill",
+          "distribution": "default",
+          "children": [
+            {
+              "type": "ImageView",
+              "content": {
+                "url": "https://i.ytimg.com/vi/mJZZNHekEQw/sddefault.jpg",
+                "shape": "rect"
+              },
+              "constraints": []
+            },
+            {
+              "type": "TextView",
+              "content": {
+                "leftText": {
+                  "textContentKind": "plain",
+                  "value": "Подарки за инвестиции",
+                  "color": "textColorPrimary",
+                  "typography": "HeadlineMedium",
+                  "maxLineCount": 2
+                },
+                "padding": {
+                  "top": "xl",
+                  "left": "l",
+                  "bottom": "zero",
+                  "right": "l"
+                },
+                "verticalAlignment": "center",
+                "horizontalAlignment": "left"
+              },
+              "constraints": []
+            },
+            {
+              "type": "MarkdownView",
+              "content": {
+                "text": "Идеи наших аналитиков приносят не только отличный доход, но и подарки. Инвестируйте от 10 000 ₽ по рекомендациям экспертов Альфа-Инвестиций и получите акцию Роснефти.\n\nПрограмма действует с 11 февраля до 31 декабря 2022 года.\n## Как получить\nНажмите **Хочу получить** и выполните условия, чтобы мы засчитали ваши действия",
+                "padding": {
+                  "top": "s",
+                  "left": "l",
+                  "bottom": "zero",
+                  "right": "s"
+                },
+                "horizontalAlignment": "left"
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "vertical",
+                "alignment": "fill",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "DataView",
+                    "content": {
+                      "dataContent": {
+                        "title": {
+                          "textContentKind": "plain",
+                          "value": "Откройте счёт",
+                          "color": "textColorPrimary",
+                          "typography": "ParagraphPrimaryMedium",
+                          "maxLineCount": 2
+                        },
+                        "subtitle": {
+                          "textContentKind": "plain",
+                          "value": "В веб-приложении или на сайте",
+                          "color": "textColorSecondary",
+                          "typography": "ParagraphPrimarySmall",
+                          "maxLineCount": 2
+                        }
+                      },
+                      "iconView": {
+                        "icon": {
+                          "color": "graphicColorTertiary",
+                          "name": "glyph_flash-circle_m"
+                        },
+                        "size": "small",
+                        "shape": "noshape"
+                      }
+                    },
+                    "constraints": [],
+                    "margins": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    },
+                    "paddings": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": "xxl",
+                  "left": "l",
+                  "bottom": "zero",
+                  "right": "l"
+                }
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "vertical",
+                "alignment": "fill",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "DataView",
+                    "content": {
+                      "dataContent": {
+                        "title": {
+                          "textContentKind": "plain",
+                          "value": "Пополните счёт",
+                          "color": "textColorPrimary",
+                          "typography": "ParagraphPrimaryMedium",
+                          "maxLineCount": 2
+                        },
+                        "subtitle": {
+                          "textContentKind": "plain",
+                          "value": "Пополните счёт на что-нибудь",
+                          "color": "textColorSecondary",
+                          "typography": "ParagraphPrimarySmall",
+                          "maxLineCount": 2
+                        }
+                      },
+                      "iconView": {
+                        "icon": {
+                          "color": "graphicColorPositive",
+                          "name": "glyph_checkmark-circle_m"
+                        },
+                        "size": "small",
+                        "shape": "noshape"
+                      }
+                    },
+                    "constraints": [],
+                    "margins": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    },
+                    "paddings": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": "xl",
+                  "left": "l",
+                  "bottom": "zero",
+                  "right": "l"
+                }
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "horizontal",
+                "alignment": "fill",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "StackView",
+                    "content": {
+                      "axis": "horizontal",
+                      "alignment": "fill",
+                      "distribution": "default",
+                      "children": [
+                        {
+                          "type": "HorizontalProgressView",
+                          "content": {
+                            "title": {
+                              "textContentKind": "plain",
+                              "value": "",
+                              "color": "textColorSecondary",
+                              "typography": "ParagraphPrimarySmall"
+                            },
+                            "subtitle": {
+                              "textContentKind": "plain",
+                              "value": "",
+                              "color": "textColorPrimary",
+                              "typography": "ActionPrimaryMedium"
+                            },
+                            "progressBarView": {
+                              "leftTitle": {
+                                "textContentKind": "plain",
+                                "value": "2 ₽",
+                                "color": "textColorSecondary",
+                                "typography": "ParagraphPrimarySmall"
+                              },
+                              "rightTitle": {
+                                "textContentKind": "plain",
+                                "value": "100 ₽",
+                                "color": "textColorSecondary",
+                                "typography": "ParagraphPrimarySmall"
+                              },
+                              "bar": {
+                                "segments": [
+                                  {
+                                    "color": "graphicColorPositive"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  }
+                                ],
+                                "spacing": "zero"
+                              }
+                            },
+                            "margins": {
+                              "top": "zero",
+                              "left": "xxxxs",
+                              "bottom": "zero",
+                              "right": "zero"
+                            }
+                          },
+                          "constraints": []
+                        }
+                      ],
+                      "backgroundColor": "specialBackgroundColorNulled",
+                      "padding": {
+                        "top": "zero",
+                        "left": "l",
+                        "bottom": "xs",
+                        "right": "zero"
+                      }
+                    },
+                    "constraints": []
+                  }
+                ],
+                "backgroundColor": "specialBackgroundColorNulled",
+                "padding": {
+                  "top": "xxxxs",
+                  "left": "xl",
+                  "bottom": "zero",
+                  "right": "xl"
+                }
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "vertical",
+                "alignment": "fill",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "DataView",
+                    "content": {
+                      "dataContent": {
+                        "title": {
+                          "textContentKind": "plain",
+                          "value": "Совершите сделки",
+                          "color": "textColorPrimary",
+                          "typography": "ParagraphPrimaryMedium",
+                          "maxLineCount": 2
+                        },
+                        "subtitle": {
+                          "textContentKind": "plain",
+                          "value": "Купите ценные бумаги из раздела Идеи от экспертов Альфа-Банка на общую сумму от 10 000 ₽ рублей до 30 ноября 2022 года",
+                          "color": "textColorSecondary",
+                          "typography": "ParagraphPrimarySmall",
+                          "maxLineCount": 4
+                        }
+                      },
+                      "iconView": {
+                        "icon": {
+                          "color": "graphicColorPositive",
+                          "name": "glyph_checkmark-circle_m"
+                        },
+                        "size": "small",
+                        "shape": "noshape"
+                      }
+                    },
+                    "constraints": [],
+                    "margins": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    },
+                    "paddings": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": "xxs",
+                  "left": "l",
+                  "bottom": "zero",
+                  "right": "l"
+                }
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "horizontal",
+                "alignment": "fill",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "StackView",
+                    "content": {
+                      "axis": "horizontal",
+                      "alignment": "fill",
+                      "distribution": "default",
+                      "children": [
+                        {
+                          "type": "HorizontalProgressView",
+                          "content": {
+                            "title": {
+                              "textContentKind": "plain",
+                              "value": "",
+                              "color": "textColorSecondary",
+                              "typography": "ParagraphPrimarySmall"
+                            },
+                            "subtitle": {
+                              "textContentKind": "plain",
+                              "value": "",
+                              "color": "textColorPrimary",
+                              "typography": "ActionPrimaryMedium"
+                            },
+                            "progressBarView": {
+                              "leftTitle": {
+                                "textContentKind": "plain",
+                                "value": "0 ₽",
+                                "color": "textColorSecondary",
+                                "typography": "ParagraphPrimarySmall"
+                              },
+                              "rightTitle": {
+                                "textContentKind": "plain",
+                                "value": "0 ₽",
+                                "color": "textColorSecondary",
+                                "typography": "ParagraphPrimarySmall"
+                              },
+                              "bar": {
+                                "segments": [
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  },
+                                  {
+                                    "color": "graphicColorTertiary"
+                                  }
+                                ],
+                                "spacing": "zero"
+                              }
+                            },
+                            "margins": {
+                              "top": "zero",
+                              "left": "xxxxs",
+                              "bottom": "zero",
+                              "right": "zero"
+                            }
+                          },
+                          "constraints": []
+                        }
+                      ],
+                      "backgroundColor": "specialBackgroundColorNulled",
+                      "padding": {
+                        "top": "zero",
+                        "left": "l",
+                        "bottom": "xs",
+                        "right": "zero"
+                      }
+                    },
+                    "constraints": []
+                  }
+                ],
+                "backgroundColor": "specialBackgroundColorNulled",
+                "padding": {
+                  "top": "xxxxs",
+                  "left": "xl",
+                  "bottom": "zero",
+                  "right": "xl"
+                }
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "vertical",
+                "alignment": "fill",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "DataView",
+                    "content": {
+                      "dataContent": {
+                        "title": {
+                          "textContentKind": "plain",
+                          "value": "Подробные условия",
+                          "color": "textColorPrimary",
+                          "typography": "ParagraphPrimaryLarge",
+                          "maxLineCount": 2
+                        }
+                      },
+                      "iconView": {
+                        "icon": {
+                          "color": "graphicColorPrimary",
+                          "name": "glyph_document-lines_m"
+                        },
+                        "backgroundColor": "backgroundColorSecondary",
+                        "size": "small",
+                        "shape": "superellipse"
+                      },
+                      "extraPaddings": true
+                    },
+                    "action": {
+                      "type": "deeplink",
+                      "url": "alfabank://pdf_viewer?url=https://www.alfadirect.ru/special-offer-gift.pdf&title=Условия&type=pdfFile"
+                    },
+                    "constraints": [],
+                    "paddings": {
+                      "top": "zero",
+                      "left": "zero",
+                      "bottom": "zero",
+                      "right": "zero"
+                    }
+                  }
+                ],
+                "padding": {
+                  "top": "l",
+                  "left": "l",
+                  "bottom": "zero",
+                  "right": "l"
+                }
+              },
+              "constraints": []
+            },
+            {
+              "type": "StackView",
+              "content": {
+                "axis": "vertical",
+                "alignment": "center",
+                "distribution": "default",
+                "children": [
+                  {
+                    "type": "ImageView",
+                    "content": {
+                      "url": "https://i.ytimg.com/vi/mJZZNHekEQw/sddefault.jpg",
+                      "shape": "rect"
+                    },
+                    "constraints": []
+                  },
+                  {
+                    "type": "ButtonView",
+                    "content": {
+                      "size": "large",
+                      "linesStyle": "ellipsize",
+                      "enabled": true,
+                      "textColor": "textColorPrimaryInverted",
+                      "backgroundColor": "backgroundColorSecondaryInverted",
+                      "graphicColor": "graphicColorPrimary",
+                      "horizontalPadding": "both",
+                      "text": "Получил старина"
+                    },
+                    "action": {
+                      "type": "http",
+                      "endpoint": "api/v1/adviser/longreads/2671",
+                      "body": {}
+                    },
+                    "constraints": []
+                  }
+                ],
+                "backgroundColor": "specialBackgroundColorNulled",
+                "padding": {
+                  "top": "m",
+                  "left": "horizontalMargin",
+                  "bottom": "xxxl",
+                  "right": "horizontalMargin"
+                }
+              },
+              "constraints": []
+            }
+          ]
+        },
+        "constraints": []
+      }
+    },
+    "constraints": [],
+    "margins": {
+      "top": "zero",
+      "left": "zero",
+      "bottom": "zero",
+      "right": "zero"
+    }
+  }
+}
